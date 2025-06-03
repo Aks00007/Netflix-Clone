@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 138vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 25px 50px;
+    background-image: url(./assets/images/bg.jpg);
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 5px 50px 100vw rgb(0, 0, 0), inset 0 0 0 100vh rgba(46, 3, 15, 0.301);
+}
+
+header {
+    height: 8vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-left {
+    background-image: url(./assets/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 6vh;
+    width: 35vw;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
+    width: 55vw;
+}
+
+.language-btn {
+    margin-right: 20px;
+}
+
+.language-btn button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    height: 38px;
+    width: 140px;
+}
+
+.language-svg {
+    height: 17px;
+    margin-left: 2px;
+    margin-right: 10px;
+    filter: invert();
+}
+
+.down-arrow-svg {
+    height: 10px;
+    margin-left: 12px;
+    filter: invert();
+}
+
+.sign-btn button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 35px;
+    width: 80px;
+}
+
+.sign-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 30px 10px 10px;
+    height: 70vh;
+    padding-top: 5vh;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5), inset 0 0 0 100vh rgba(0, 0, 0, 0.5), inset 0 -80px 100px rgba(255, 255, 255, 0.521);
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 100%,
+            50% 96%,
+            0 100%);
+    border: none;
+}
+
+.hero-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vh;
+    height: 30vh;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container input {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color: rgba(128, 128, 128, 0.587);
+    border: 1px solid grey;
+    color: white;
+}
+
+.input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.648);
+}
+
+.input-container button {
+    width: 15vw;
+    height: 7vh;
+    border-radius: 50px;
+    background-color: rgba(255, 0, 0, 0.863);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.input-container button img {
+    height: 18px;
+    margin-left: 5px;
+}
+
+.trending-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+    padding-left: 100px;
+    border-radius: 90% 90% 0px 0px;
+}
+
+.trending-container span {
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.trending-cards {
+    height: 35vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 90px;
+    padding-top: 10px;
+}
+
+.card-t1 {
+    height: 40vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card-t1 span {
+    line-height: 1;
+    display: inline-block;
+    font-size: 70px;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+    font-weight: 900;
+    color: rgb(9 0 0 / 80%);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.card-t1 img {
+    height: 35vh;
+    position: relative;
+    top: 15px;
+    border-radius: 15px;
+}
+
+.plans-container {
+    height: 30vh;
+    padding: 50px 100px;
+}
+
+.plans-heading {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.plans-cards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-t2 {
+    height: 27vh;
+    width: 20vw;
+    margin: 20px 5px;
+    padding: 35px 12px 2px 15px;
+    border-radius: 20px;
+    color: grey;
+    position: relative;
+    border: transparent;
+}
+
+.card-t2 h2 {
+    color: rgb(255, 255, 255);
+}
+
+.card-t2 h3 {
+    padding: 10px 0;
+}
+
+.card-t2 p {
+    position: absolute;
+    bottom: 13px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.card-t2 ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+.card-t2 ul li {
+    padding: 2px 0;
+}
+
+.card-t2 ul li:before {
+    content: '✓';
+    color: white;
+    margin-right: 10px;
+}
+
+.reasons-container {
+    height: 30vh;
+    padding: 50px 100px;
+}
+
+.reasons-heading {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.reasons-cards {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-t3 {
+    height: 25vh;
+    width: 20vw;
+    margin: 20px 5px;
+    padding: 10px 12px 2px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.221);
+    border-radius: 20px;
+    color: grey;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.card-t3 h3 {
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.card-t3 p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.card-t3 img {
+    height: 35px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.faq-container {
+    height: 80vh;
+    padding: 50px 100px;
+}
+
+.faq-heading {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.faq-cards {
+    height: auto;
+}
+
+.card-t4 {
+    height: 6vh;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid rgba(128, 128, 128, 0.221);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card-t4:hover {
+    background-color: rgba(128, 128, 128, 0.568);
+}
+
+.query-container {
+    color: white;
+    height: auto;
+}
+
+.query-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.815);
+}
+
+footer p {
+    padding: 50px 0 0 100px;
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.col ul {
+    list-style: none;
+}
+
+.col ul li {
+    text-decoration: underline;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.language-btn-footer {
+    margin-right: 20px;
+}
+
+.language-btn-footer button {
+    background-color: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.432);
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    height: 38px;
+    width: 140px;
+    margin-left: 100px;
+}
+
+.language-svg {
+    height: 17px;
+    margin-left: 2px;
+    margin-right: 10px;
+    filter: invert();
+}
+
+.netflix-india {
+    padding: 50px 0 50px 100px;
+}
+
+footer span {
+    padding: 150px 100px;
+    font-size: 15px;
+    color: grey;
+}
+
+footer span u {
+    color: rgb(0, 106, 255);
+}
